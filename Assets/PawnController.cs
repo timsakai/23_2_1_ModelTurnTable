@@ -64,6 +64,11 @@ public class PawnController : MonoBehaviour
 
             }
             vcam.Translate(Vector3.forward * Input.mouseScrollDelta.y, Space.Self);
+            if (vcam.localPosition.z < 1)
+            {
+                vcam.Translate(Vector3.back * Input.mouseScrollDelta.y, Space.Self);
+
+            }
         }
         else if (state == PawnState.Standby)
         {
@@ -74,7 +79,7 @@ public class PawnController : MonoBehaviour
 
         modelOrigin.Rotate(new Vector3(0, rotVel.y, 0));
         vcam.RotateAround(modelOrigin.position, transform.right, rotVel.x);
-        if (vcam.localPosition.z > -0.2)
+        if (vcam.localPosition.z < 0.2)
         {
             vcam.RotateAround(modelOrigin.position, transform.right, -rotVel.x);
             rotVel.x = 0;
@@ -97,7 +102,7 @@ public class PawnController : MonoBehaviour
     }
     void MouseControll()
     {
-        rotVel = new Vector3(-Input.GetAxis("Mouse Y") , -Input.GetAxis("Mouse X")) * Time.deltaTime * mouseControllSpeed;
+        rotVel = new Vector3(Input.GetAxis("Mouse Y") * 0.7f , -Input.GetAxis("Mouse X")) * Time.deltaTime * mouseControllSpeed;
     }
 
     void Turn()
