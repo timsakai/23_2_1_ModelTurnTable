@@ -121,5 +121,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: mocmodel
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 569be297b28b4354da294b313842ceb0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5dfd59e257a08674094988d5a0825ae6, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 569be297b28b4354da294b313842ceb0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 569be297b28b4354da294b313842ceb0, type: 3}
