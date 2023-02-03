@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: FosterMenu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Breath Enable / Disable
+    icon: {fileID: 2800000, guid: 16e0846165acaa1429417e757c53ef9b, type: 3}
+    type: 102
+    parameter:
+      name: Breath
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Happy
+    icon: {fileID: 2800000, guid: 52d53e16b195711458b4218961a17ac3, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Happy
+    labels: []
+  - name: Gasp
+    icon: {fileID: 2800000, guid: 74cf381738450e9459e3ad3e8a001328, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Gasp
+    labels: []
+  - name: Angry
+    icon: {fileID: 2800000, guid: cf6b52938b47d4c41accf06e276bef15, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Angry
+    labels: []
+  - name: Awful
+    icon: {fileID: 2800000, guid: a2679f9ffacc1994ba711b75d083006b, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Awful
+    labels: []
+  - name: Question
+    icon: {fileID: 2800000, guid: d7e0cadd9396b1a4ab978c1153c6224f, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Question
+    labels: []
