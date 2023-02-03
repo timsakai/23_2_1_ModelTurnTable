@@ -38,7 +38,7 @@ public class PawnGenerator : MonoBehaviour
         {
             List<GameObject> objs = new List<GameObject>();
             objs.Add((GameObject)PrefabUtility.InstantiatePrefab(prefabs[i]));
-            objs.Add((GameObject)PrefabUtility.InstantiatePrefab(pedestal));
+            if(pedestal != null) objs.Add((GameObject)PrefabUtility.InstantiatePrefab(pedestal));
             pos = Quaternion.Euler(Vector3.down * (360 / prefabs.Count)) * pos;
             for (int ii = 0; ii < objs.Count; ii++)
             {
