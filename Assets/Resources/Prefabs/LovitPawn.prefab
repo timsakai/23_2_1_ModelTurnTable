@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: loveanim
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 42f84f571633361429b36a02e8a30b66, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a7b6f44970461a9478030a14899821ff, type: 2}
     - target: {fileID: 8879528566716807029, guid: 42f84f571633361429b36a02e8a30b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
