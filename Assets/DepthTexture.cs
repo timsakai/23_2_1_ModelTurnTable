@@ -13,8 +13,10 @@ public class DepthTexture : MonoBehaviour
     [SerializeField]
     private float _outlineThick = 1.0f;
 
-    [SerializeField] float depthStart = 0;
-    [SerializeField] float depthEnd = 3;
+    float depthStart = 0;
+    float depthEnd = 3;
+
+    [SerializeField] float resolution = 1;
 
     private Material _material;
 
@@ -61,6 +63,7 @@ public class DepthTexture : MonoBehaviour
             _material.SetFloat("_OutlineThick", _outlineThick);
             _material.SetFloat("_DepthStart", depthStart);
             _material.SetFloat("_DepthEnd", depthEnd);
+            _material.SetFloat("_Resolution", resolution);
         }
     }
 }

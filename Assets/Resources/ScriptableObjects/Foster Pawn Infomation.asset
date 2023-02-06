@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e3be00fe8e775498c78bc9a9a16449, type: 3}
   m_Name: Foster Pawn Infomation
   m_EditorClassIdentifier: 
-  ModelName: K.Foster
-  Description: "\u6F5C\u6C34\u670D\u3092\u7740\u305F\u5B50\u3067\u3059\u3002\n\u30C7\u30B6\u30A4\u30F3\u306E\u30E1\u30EA\u30CF\u30EA\u3092\u610F\u8B58\u3057\u307E\u3057\u305F\u3002\nBlendShape\u3067\u8868\u60C5\u5909\u5316\u3042\u308A\u3002"
-  Date: Apr. 22
-  AuthorName: "\u9152\u4E95\u3000\u5B9A\u6B69"
-  AuthorLink: t:@tim141221
-  UsedTools: _bl_ps_pt_ut
+  data:
+    ModelName: K.Foster
+    Description: "\u6F5C\u6C34\u670D\u306E\u3042\u306E\u3053\u3002\nBlendShape\u306B\u3088\u308B\u8868\u60C5\u5909\u5316\u3042\u308A\u3002"
+    Date: Jun 22
+    AuthorName: "1F \u9152\u4E95 \u5B9A\u6B69"
+    AuthorLink: t:@tim141221
+    UsedTools: _bl_ps_ut_pt

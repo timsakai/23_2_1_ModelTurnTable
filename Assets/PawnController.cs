@@ -123,4 +123,13 @@ public class PawnController : MonoBehaviour
         return frontFixCamPos;
     }
 
+    public void SetModelLayer(int layer)
+    {
+        Transform[] objects = modelOrigin.GetComponentsInChildren<Transform>();
+        foreach (var obj in objects)
+        {
+            obj.gameObject.layer = layer;
+        }
+    }
+
 }

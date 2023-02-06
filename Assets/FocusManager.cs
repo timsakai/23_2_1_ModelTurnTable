@@ -11,7 +11,9 @@ public class FocusManager : MonoBehaviour
     float noControllTimeCurrent = 0;
     [SerializeField] float noControllTime = 10;
     [SerializeField] InfomationDisplay infomationDisplay;
-    public float focusChangeTimeCurrent { get; private set; } = 0; 
+    public float focusChangeTimeCurrent { get; private set; } = 0;
+    [HideInInspector] public int unfocusLayer;
+    [HideInInspector] public int focusLayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class FocusManager : MonoBehaviour
         for (int i = 0; i < pawns.Count; i++)
         {
             pawns[i].SetFocus(i == current);
+            pawns[i].SetModelLayer(i == current ? focusLayer : unfocusLayer);
         }
         LeftCam.position = pawns[PrevIdx()].GetFrontFixCam().position;
         LeftCam.rotation = pawns[PrevIdx()].GetFrontFixCam().rotation;

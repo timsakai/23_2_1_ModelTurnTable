@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e3be00fe8e775498c78bc9a9a16449, type: 3}
   m_Name: CCA Pawn Infomation
   m_EditorClassIdentifier: 
-  ModelName: CCA
-  Description: "\u4E2D\u56FD\u5263\u58EB\u30E2\u30C1\u30FC\u30D5\u3067\u3059\u3002\n\u30B5\u30A4\u30DC\u30FC\u30B0\uFF1F\u30ED\u30DC\uFF1F\u30CF\u30C3\u30AD\u30EA\u3068\u6C7A\u3081\u3066\u307E\u305B\u3093\u3002\n\u5263\u3082\u81EA\u4F5C\u3057\u307E\u3057\u305F\u3002"
-  Date: Dec. 22
-  AuthorName: "\u9152\u4E95\u3000\u5B9A\u6B69"
-  AuthorLink: t:@tim141221
-  UsedTools: _bl_ps_pt_ut
+  data:
+    ModelName: CCA
+    Description: "\u4E2D\u83EF\u30E2\u30C1\u30FC\u30D5\n\u9670\u5F71\u30D9\u30A4\u30AF\u6E08\u307F\u30C6\u30AF\u30B9\u30C1\u30E3\u3092\u4F7F\u7528\u3002\n\u5263\u306E\u30E2\u30C7\u30EB\u3082\u4F5C\u6210\u3002"
+    Date: Nov 22
+    AuthorName: "1F \u9152\u4E95 \u5B9A\u6B69"
+    AuthorLink: t:@tim141221
+    UsedTools: _bl_ps_ut_pt

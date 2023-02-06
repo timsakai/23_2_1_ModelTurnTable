@@ -7,6 +7,7 @@ Shader "DepthOutline"
         ZWrite Off
 
         Tags { "RenderType" = "Opaque" }
+        Blend DstColor Zero
 
         Pass
         {
@@ -35,6 +36,8 @@ Shader "DepthOutline"
             float4 _OutlineColor;
             float _OutlineThick;
 
+            float _Resolution;
+
             float _DepthStart;
             float _DepthEnd;
 
@@ -48,33 +51,33 @@ Shader "DepthOutline"
 
             fixed4 frag(v2f i) : SV_Target
             {
-                float diffX = _CameraDepthTexture_TexelSize.x * _OutlineThick;
-                float diffY = _CameraDepthTexture_TexelSize.y * _OutlineThick;
-                float col00 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(-diffX, -diffY)).r);
-                float col10 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(0, -diffY)).r);
-                float col01 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(-diffX, 0)).r);
-                float col11 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(0, 0)).r);
+                //float diffX = _CameraDepthTexture_TexelSize.x * _OutlineThick;
+                //float diffY = _CameraDepthTexture_TexelSize.y * _OutlineThick;
+                //float col00 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(-diffX, -diffY)).r);
+                //float col10 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(0, -diffY)).r);
+                //float col01 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(-diffX, 0)).r);
+                //float col11 = Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(0, 0)).r);
 
                 //float col00 = tex2D(_CameraDepthTexture, i.uv + half2(-diffX, -diffY)).r;
                 //float col10 = tex2D(_CameraDepthTexture, i.uv + half2(0, -diffY)).r;
                 //float col01 = tex2D(_CameraDepthTexture, i.uv + half2(-diffX, 0)).r;
                 //float col11 = tex2D(_CameraDepthTexture, i.uv + half2(0, 0)).r;
-                float outlineValue = (col00 - col11) * (col00 - col11) + (col10 - col01) * (col10 - col01);
+                //float outlineValue = (col00 - col11) * (col00 - col11) + (col10 - col01) * (col10 - col01);
 
                 //clip(outlineValue - _OutlineThreshold);
                 float avrg = 0;
-                for (int ix = -_OutlineThick; ix < _OutlineThick; ix++)
+                for (int ix = -_OutlineThick; ix < _OutlineThick; ix += _Resolution + 1)
                 {
-                    for (int iy = -_OutlineThick; iy < _OutlineThick; iy++)
+                    for (int iy = -_OutlineThick; iy < _OutlineThick; iy += _Resolution + 1)
                     {
                         float difx = _CameraDepthTexture_TexelSize.x;
                         float dify = _CameraDepthTexture_TexelSize.y;
                         avrg += 1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv + half2(difx * ix,dify * iy)).r);
                     }
                 }
-                avrg = avrg / ((_OutlineThick * 2) * (_OutlineThick * 2));
+                avrg = avrg / (((_OutlineThick * 2)/ _Resolution) * ((_OutlineThick * 2) / _Resolution));
                 avrg = 1 - avrg;
-                return half4(avrg, avrg, avrg, 1)+ ( 1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv)));
+                return half4(avrg, avrg, avrg, 1)+ ( 1 -    Linear01Depth(tex2D(_CameraDepthTexture, i.uv)));
             }
             ENDCG
         }

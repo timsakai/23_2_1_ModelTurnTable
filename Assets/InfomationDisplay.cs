@@ -12,7 +12,7 @@ public class InfomationDisplay : MonoBehaviour
     float charUnitCurrent = 0;
     int charcount = 0;
     [SerializeField] PawnInfomationHandler pawn;
-    PawnInfomation info;
+    PawnInfomationData info;
     [SerializeField] ToolIconDefine toolIconDefine;
     [SerializeField] GUIStyle ModelNameStyle;
     [SerializeField] GUIStyle DescriptionStyle;
@@ -49,11 +49,11 @@ public class InfomationDisplay : MonoBehaviour
     {
         if (pawn != null)
         {
-            info = pawn.info;
+            info = pawn.info.data;
         }
         else
         {
-            info = new PawnInfomation();
+            info = new PawnInfomationData();
         }
         GUI.Box(new Rect(0, 0, 100, 100), info.ModelName.Substring(0,Math.Min(charcount, info.ModelName.Length)),   ModelNameStyle);
         GUI.Box(new Rect(0, 0, 100, 100), info.Description.Substring(0, Math.Min(charcount, info.Description.Length)), DescriptionStyle);

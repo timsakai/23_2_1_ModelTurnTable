@@ -11,7 +11,7 @@ public class PawnGenerator : MonoBehaviour
     [SerializeField] List<GameObject> prefabs;
     [SerializeField] Transform basePoint;
     [SerializeField] GameObject pedestal;
-    [SerializeField] float radius = 10;
+    [SerializeField] float radius = 10f;
     [SerializeField] List<GameObject> generated;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class PawnGenerator : MonoBehaviour
     {
         
     }
-
+#if UNITY_EDITOR
     [ContextMenu("Generate")]
     public void Generate()
     {
@@ -59,4 +59,5 @@ public class PawnGenerator : MonoBehaviour
         }
         gameObject.GetComponent<FocusManager>().SetPawns(generated);
     }
+#endif
 }
