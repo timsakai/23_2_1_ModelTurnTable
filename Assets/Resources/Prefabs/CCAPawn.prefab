@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8611373765922839274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6302149049625721012}
+  - component: {fileID: 1249648614913858556}
+  m_Layer: 6
+  m_Name: down
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6302149049625721012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611373765922839274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.62451315, y: 0, z: -0.16271077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 597588974531793089}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1818360608 &1249648614913858556
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611373765922839274}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0.62451315, y: 0, z: -0.16271077}
+  m_TranslationOffset: {x: 0, y: -1.2229999, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 0
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 2124022714709756989}
+    weight: 1
 --- !u!1001 &492060611340925041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -321,12 +372,62 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2698329483557936498, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0601771
+      objectReference: {fileID: 0}
+    - target: {fileID: -2698329483557936498, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0601771
+      objectReference: {fileID: 0}
+    - target: {fileID: -2698329483557936498, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7045415
+      objectReference: {fileID: 0}
+    - target: {fileID: -2698329483557936498, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7045415
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
       propertyPath: m_Name
       value: CCCSword (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+--- !u!4 &2124022714709756989 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2698329483557936498, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+  m_PrefabInstance: {fileID: 5185772677103759027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4914684969007852079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 271314625714717852, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
+  m_PrefabInstance: {fileID: 5185772677103759027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!895512359 &4261780034661283927
+AimConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914684969007852079}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: -80.23608, y: -90, z: -90}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AimVector: {x: 0, y: 1, z: 0}
+  m_UpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpVector: {x: 0, y: 1, z: 0}
+  m_WorldUpObject: {fileID: 0}
+  m_UpType: 0
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 6302149049625721012}
+    weight: 1
 --- !u!1 &5419793081530520546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 26ceb9ef20e951f4e93bab002fd821a8, type: 3}
