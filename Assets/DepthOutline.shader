@@ -74,7 +74,7 @@ Shader "DepthOutline"
                 }
                 avrg = avrg / ((_OutlineThick * 2) * (_OutlineThick * 2));
                 avrg = 1 - avrg;
-                return half4(avrg, avrg, avrg, 1);// *(1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv)));
+                return half4(avrg, avrg, avrg, 1)+ ( 1 - Linear01Depth(tex2D(_CameraDepthTexture, i.uv)));
             }
             ENDCG
         }
