@@ -10,10 +10,13 @@ public class FocusManager : MonoBehaviour
     [SerializeField] Transform RightCam;
     float noControllTimeCurrent = 0;
     [SerializeField] float noControllTime = 10;
+    [SerializeField] InfomationDisplay infomationDisplay;
+    public float focusChangeTimeCurrent { get; private set; } = 0; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        infomationDisplay.SetPawn(pawns[current]);
+
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class FocusManager : MonoBehaviour
         RightCam.position = pawns[NextIdx()].GetFrontFixCam().position;
         RightCam.rotation = pawns[NextIdx()].GetFrontFixCam().rotation;
         noControllTimeCurrent += Time.deltaTime;
+        focusChangeTimeCurrent += Time.deltaTime;
         if (Input.GetMouseButton(0) || noControllTime <= 0)
         {
             noControllTimeCurrent = 0;
@@ -42,11 +46,16 @@ public class FocusManager : MonoBehaviour
     public void Next()
     {
         current = NextIdx();
+        focusChangeTimeCurrent = 0;
+        infomationDisplay.SetPawn(pawns[current]);
     }
 
     public void Prev()
     {
         current = PrevIdx();
+        focusChangeTimeCurrent = 0;
+        infomationDisplay.SetPawn(pawns[current]);
+
     }
 
     int NextIdx()

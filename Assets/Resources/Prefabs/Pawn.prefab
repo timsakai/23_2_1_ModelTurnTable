@@ -256,7 +256,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053620784128003984}
-  m_LocalRotation: {x: -0, y: 0.9965281, z: -0.08325728, w: 0}
+  m_LocalRotation: {x: -0, y: 0.9895346, z: -0.1442957, w: 0}
   m_LocalPosition: {x: 0, y: 1.95, z: 3.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -344,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053620784783019625}
   - component: {fileID: 1053620784783019624}
+  - component: {fileID: 2287182367049497874}
   m_Layer: 6
   m_Name: Pawn
   m_TagString: Untagged
@@ -389,6 +390,19 @@ MonoBehaviour:
   vcam: {fileID: 1053620784128003985}
   frontFixCamPos: {fileID: 302095246858735029}
   state: 1
+--- !u!114 &2287182367049497874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053620784783019639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc335d6951c55f49ba1332e63307bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info: {fileID: 11400000, guid: 71ce3c786da8bb8418bc616f92e355bb, type: 2}
 --- !u!1 &9215000279816304298
 GameObject:
   m_ObjectHideFlags: 0

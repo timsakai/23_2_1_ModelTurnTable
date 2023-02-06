@@ -11,6 +11,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1053620784128003985, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000000029802319
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053620784128003985, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000000074505797
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053620784128003985, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.14429568
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053620784128003986, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053620784128003986, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: m_Lens.m_SensorSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1053620784783019625, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
       propertyPath: m_RootOrder
       value: 0

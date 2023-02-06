@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257e25da34a5dd44a94236e47fbfaf78, type: 3}
+  m_Name: Tool Icon Define
+  m_EditorClassIdentifier: 
+  icons:
+  - chara: _bl
+    icon: {fileID: 2800000, guid: 194b7c5d1fcb34945bdf7393bd2fdb82, type: 3}
+  - chara: _ut
+    icon: {fileID: 2800000, guid: 96bb08db933dee343bab76f78c039d76, type: 3}
+  - chara: _ps
+    icon: {fileID: 2800000, guid: 75a7d3fcaa52be04aa89c4aa39f44bff, type: 3}
+  - chara: _pt
+    icon: {fileID: 2800000, guid: e1dfbbe17d0593849aea72435aca6c7c, type: 3}

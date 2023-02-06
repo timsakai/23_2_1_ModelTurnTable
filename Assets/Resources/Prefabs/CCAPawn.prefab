@@ -79,6 +79,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CCAPawn
       objectReference: {fileID: 0}
+    - target: {fileID: 2287182367049497874, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 11400000, guid: cc6d8b5342509ca4b9d8c11008804647, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
 --- !u!4 &597588974531793089 stripped

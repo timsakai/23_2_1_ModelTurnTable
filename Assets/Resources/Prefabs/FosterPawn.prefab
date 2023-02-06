@@ -57,8 +57,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1053620784783019639, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
       propertyPath: m_Name
-      value: FosterVariant
+      value: FosterPawn
       objectReference: {fileID: 0}
+    - target: {fileID: 2287182367049497874, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 11400000, guid: 06babcb5e5915d44c92f3dd38e57db5e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
 --- !u!4 &1026377424220255821 stripped

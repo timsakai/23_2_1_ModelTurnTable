@@ -148,6 +148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LovitPawn
       objectReference: {fileID: 0}
+    - target: {fileID: 2287182367049497874, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c81948301f9e694197b482847c2d56c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
 --- !u!4 &2711923228384010250 stripped
