@@ -21,3 +21,5 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: 75a7d3fcaa52be04aa89c4aa39f44bff, type: 3}
   - chara: _pt
     icon: {fileID: 2800000, guid: e1dfbbe17d0593849aea72435aca6c7c, type: 3}
+  - chara: _ad
+    icon: {fileID: 2800000, guid: c6ee7f9a51135084b846668ed0f1ef9b, type: 3}
