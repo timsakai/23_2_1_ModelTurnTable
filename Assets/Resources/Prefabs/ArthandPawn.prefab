@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArthandPawn
       objectReference: {fileID: 0}
+    - target: {fileID: 2287182367049497874, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 11400000, guid: e991b98985c2a71478bf311f95470158, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eea6ade0ab4f734fae6d3b7d4fc01fc, type: 3}
 --- !u!4 &292420793700036953 stripped

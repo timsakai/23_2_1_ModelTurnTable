@@ -3,7 +3,12 @@ guid: 5f3c7a7ac8e476445b5bea05b94e1ddc
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArtiHand
+    second: {fileID: 2100000, guid: 569966efa2f4b234290061a55ddf644f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
