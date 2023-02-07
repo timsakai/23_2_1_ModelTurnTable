@@ -39,10 +39,10 @@ public class PawnGenerator : MonoBehaviour
             List<GameObject> objs = new List<GameObject>();
             objs.Add((GameObject)PrefabUtility.InstantiatePrefab(prefabs[i]));
             if(pedestal != null) objs.Add((GameObject)PrefabUtility.InstantiatePrefab(pedestal));
-            pos = Quaternion.Euler(Vector3.down * (360 / prefabs.Count)) * pos;
+            
             for (int ii = 0; ii < objs.Count; ii++)
             {
-                objs[ii].transform.rotation = Quaternion.Euler(Vector3.down * ((360 / prefabs.Count) * i + 90));
+                objs[ii].transform.rotation = Quaternion.Euler(Vector3.down * ((360 / prefabs.Count) * i));
                 objs[ii].transform.position = pos + transform.position;
                 if (ii == 0)
                 {
@@ -56,6 +56,7 @@ public class PawnGenerator : MonoBehaviour
                 generated.Add(objs[ii]);
 
             }
+            pos = Quaternion.Euler(Vector3.down * (360 / prefabs.Count)) * pos;
         }
         gameObject.GetComponent<FocusManager>().SetPawns(generated);
     }

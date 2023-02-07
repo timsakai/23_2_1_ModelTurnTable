@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1105 &110500000
+HumanTemplate:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: arthand Human Template
+  m_BoneTemplate:
+    Left Index Distal: Index_3_L
+    Left Index Intermediate: Index_2_L
+    Left Index Proximal: Index_1_L
+    Left Little Distal: Pinky_3_L
+    Left Little Intermediate: Pinky_2_L
+    Left Little Proximal: Pinky_1_L
+    Left Middle Distal: Middle_3_L
+    Left Middle Intermediate: Middle_2_L
+    Left Middle Proximal: Middle_1_L
+    Left Ring Distal: Ring_3_L
+    Left Ring Intermediate: Ring_2_L
+    Left Ring Proximal: Ring_1_L
+    Left Thumb Distal: Thumb_3_L
+    Left Thumb Intermediate: Thumb_2_L
+    Left Thumb Proximal: Thumb_1_L
+    LeftHand: Hand_L
+    LeftLowerArm: Lowerarm_L
+    LeftShoulder: Shoulder_L
+    LeftUpperArm: Upperarm_L
+    Right Index Distal: Index_3_R
+    Right Index Intermediate: Index_2_R
+    Right Index Proximal: Index_1_R
+    Right Little Distal: Pinky_3_R
+    Right Little Intermediate: Pinky_2_R
+    Right Little Proximal: Pinky_1_R
+    Right Middle Distal: Middle_3_R
+    Right Middle Intermediate: Middle_2_R
+    Right Middle Proximal: Middle_1_R
+    Right Ring Distal: Ring_3_R
+    Right Ring Intermediate: Ring_2_R
+    Right Ring Proximal: Ring_1_R
+    Right Thumb Distal: Thumb_3_R
+    Right Thumb Intermediate: Thumb_2_R
+    Right Thumb Proximal: Thumb_1_R
+    RightHand: Hand_R
+    RightLowerArm: Lowerarm_R
+    RightShoulder: Shoulder_R
+    RightUpperArm: Upperarm_R
