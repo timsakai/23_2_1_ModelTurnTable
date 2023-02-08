@@ -14,6 +14,11 @@ public class FocusManager : MonoBehaviour
     public float focusChangeTimeCurrent { get; private set; } = 0;
     [HideInInspector] public int unfocusLayer;
     [HideInInspector] public int focusLayer;
+
+    [SerializeField] Texture2D mapFocusedBox;
+    [SerializeField] Texture2D mapBox;
+
+    [SerializeField] GUIStyle mapBoxStyle;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,5 +98,28 @@ public class FocusManager : MonoBehaviour
                 pawns.Add(pawn);
             }
         }
+    }
+
+    private void OnGUI()
+    {
+        Rect map = new Rect(1920 / 2 - 300, 1080 - 30, 600, 30);
+        Vector2 size = new Vector2(map.size.x / pawns.Count, map.size.y);
+        float gap = 10;
+        GUILayout.BeginArea(map);
+        Texture2D image;
+        for (int i = 0; i < pawns.Count; i++)
+        {
+           
+            if (i == current)
+            {
+                image = mapFocusedBox;
+            }
+            else
+            {
+                image = mapBox;
+            }
+            GUI.Box(new Rect((size.x * i) + (gap), 0, size.x - gap, size.y), image, mapBoxStyle);
+        }
+        GUILayout.EndArea();
     }
 }

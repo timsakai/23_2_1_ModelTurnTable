@@ -736,11 +736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1772913014158324550, guid: 388bc80e1a433cf46bbe1c0e15f7f71c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 1772913014158324550, guid: 388bc80e1a433cf46bbe1c0e15f7f71c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000007450581
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 388bc80e1a433cf46bbe1c0e15f7f71c, type: 3}
@@ -1679,6 +1679,75 @@ MonoBehaviour:
   infomationDisplay: {fileID: 1304384303}
   unfocusLayer: 6
   focusLayer: 8
+  mapFocusedBox: {fileID: 2800000, guid: 6d0a0df0306da1b48a642c561e071cdd, type: 3}
+  mapBox: {fileID: 2800000, guid: e3f90ecb6e07c774b9c7645d918801c9, type: 3}
+  mapBoxStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!114 &1304384301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2829,15 +2898,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8987548356133380688, guid: cd159e15740f1eb4f84244883dcfbcae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.000000059604645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8987548356133380688, guid: cd159e15740f1eb4f84244883dcfbcae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000007450581
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8987548356133380688, guid: cd159e15740f1eb4f84244883dcfbcae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.14429568
+      value: -0.14429569
       objectReference: {fileID: 0}
     - target: {fileID: 8987548356133380691, guid: cd159e15740f1eb4f84244883dcfbcae, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -3138,11 +3207,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 597588974437201888, guid: 357885b070d910a44b0075ef18aff5ef, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.000000014901161
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 597588974437201888, guid: 357885b070d910a44b0075ef18aff5ef, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000018626451
+      value: -0.0000000055879354
       objectReference: {fileID: 0}
     - target: {fileID: 597588974437201888, guid: 357885b070d910a44b0075ef18aff5ef, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3150,7 +3219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597588974437201888, guid: 357885b070d910a44b0075ef18aff5ef, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.14429569
+      value: -0.1442957
       objectReference: {fileID: 0}
     - target: {fileID: 597588974437201891, guid: 357885b070d910a44b0075ef18aff5ef, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
