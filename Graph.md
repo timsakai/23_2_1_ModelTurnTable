@@ -1,11 +1,11 @@
 23_2_1_ModelTurnTable
- Unityでの3Dモデル展示用プロジェクト
+ - Unityでの3Dモデル展示用プロジェクト
 # 環境
- ~~Unity 2021.3.15f1~~
- 24/11/17更新　：　Unity 2022.3.6f1 LTS に更新
- Built-inRenderPipeline
- Cinemachine 2.8.9
- ~~DOTween 1.2.705~~ (使ってない)
+ - ~~Unity 2021.3.15f1~~
+ - 24/11/17更新　：　Unity 2022.3.6f1 LTS に更新
+ - Built-inRenderPipeline
+ - Cinemachine 2.8.9
+ - ~~DOTween 1.2.705~~ (使ってない)
 # 使い方
 ## モデルプレハブのセットアップ
 
