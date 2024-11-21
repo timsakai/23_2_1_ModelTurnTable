@@ -169,3 +169,4 @@ PawnController <|-- FocusManager : 登録されているPawnControllerのPawnSta
 PawnController <|-- PawnGenerator : 生成()にてモデルのプレハブを通して生成
 
 ```
+*クラス図に動的なことを書いている。要修正
